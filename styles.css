@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E7F2EF;
+    color: #19183B;
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+    background: #A1C2BD;
+    color: #19183B;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-bottom: 2px solid #708993;
+}
+
+h1 {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 20px;
+    display: contents;
+}
+
+nav a {
+    color: #19183B;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7089939e;
+}
+
+/* --- Sección general --- */
+.section-group {
+    text-align: center;
+    padding: 80px;
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    color: #19183B;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(25, 24, 59, 0.1);
+}
+
+.section-group h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #19183B;
+}
+
+.section-group p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #556870;
+}
+
+/* --- Botones --- */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #19183B;
+    color: white;
+    margin: 10px auto 20px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(25, 24, 59, 0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #708993;
+    transform: scale(1.05);
+}
+
+/* --- Sección About --- */
+.about {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    color: #19183B;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(25, 24, 59, 0.1);
+    text-align: left;
+}
+
+.profile {
+    display: block;
+    margin: 0 auto 15px;
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(25, 24, 59, 0.2);
+}
+
+.about h2, .about h3 {
+    margin: 15px;
+    color: #19183B;
+}
+
+.about p {
+    margin-bottom: 15px;
+    color: #556870;
+}
+
+.about ul {
+    margin: 10px 0 20px 20px;
+}
+
+.about li {
+    margin: 5px 0;
+    color: #556870;
+}
+
+/* --- Portafolio --- */
+.portafolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    color: #19183B;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(25, 24, 59, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px rgba(25, 24, 59, 0.2);
+}
+
+.card img {
+    width: 160px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #19183B;
+}
+
+.card p {
+    font-size: 14px;
+    color: #556870;
+    margin-bottom: 20px;
+}
+
+/* --- Animación Fade-in --- */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Formularios --- */
+.form-group {
+    max-width: 600px;
+    margin: 20px auto 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #19183B;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(25, 24, 59, 0.1);
+}
+
+.form-group input, textarea {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #A1C2BD;
+    border-radius: 6px;
+}
+
+/* --- Redes Sociales --- */
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #19183B;
+}
+
+.social a:hover {
+    color: #708993;
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    background: #A1C2BD;
+    border-top: 2px solid #708993;
+    color: #19183B;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
